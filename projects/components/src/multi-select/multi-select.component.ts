@@ -30,7 +30,8 @@ import { MultiSelectJustify } from './multi-select-justify';
         this.size,
         this.showBorder ? 'border' : '',
         this.disabled ? 'disabled' : '',
-        this.popoverOpen ? 'open' : ''
+        this.popoverOpen ? 'open' : '',
+        this.selected.length ? 'selected' : ''
       ]"
       *htLetAsync="this.selected$ as selected"
     >
